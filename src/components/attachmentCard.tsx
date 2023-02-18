@@ -43,7 +43,6 @@ const AttachmentCard = ({
   size,
   content,
 }: AttachmentsCardProps) => {
-  console.log(content);
   const data = new Blob([new Uint8Array(content)], { type: contentType });
   const link = URL.createObjectURL(data);
 

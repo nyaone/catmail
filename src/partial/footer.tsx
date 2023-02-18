@@ -7,7 +7,7 @@ interface FooterProps {
 const Footer = ({ attachments }: FooterProps) => (
   <footer className="py-2">
     {/*Attachments*/}
-    <div className="flex">
+    <div className="flex gap-2 flex-wrap">
       {attachments.map((attachment) => (
         <AttachmentCard
           key={attachment.checksum}
